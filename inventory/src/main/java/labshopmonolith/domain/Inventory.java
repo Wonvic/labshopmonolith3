@@ -30,7 +30,7 @@ public class Inventory {
 
     //<<< Clean Arch / Port Method
     public void decreaseStock(DecreaseStockCommand decreaseStockCommand) {
-        //implement business logic here:
+        setStock(getStock() - decreaseStockCommand.getQty());
 
     }
     //>>> Clean Arch / Port Method
